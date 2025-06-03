@@ -1,9 +1,11 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import TicTacToeClassic from "./TicTacToeClassic";
 
+// PUBLIC_INTERFACE
 function App() {
   return (
-    <div className="app">
+    <div className="app" style={{ minHeight: '100vh', background: "#ffffff" }}>
       <nav className="navbar">
         <div className="container">
           <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
@@ -14,21 +16,8 @@ function App() {
           </div>
         </div>
       </nav>
-
-      <main>
-        <div className="container">
-          <div className="hero">
-            <div className="subtitle">AI Workflow Manager Template</div>
-            
-            <h1 className="title">tic_tac_toe</h1>
-            
-            <div className="description">
-              Start building your application.
-            </div>
-            
-            <button className="btn btn-large">Button</button>
-          </div>
-        </div>
+      <main style={{paddingTop: 100}}>
+        <TicTacToeClassic />
       </main>
     </div>
   );
